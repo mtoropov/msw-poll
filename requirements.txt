@@ -1,0 +1,13 @@
+# Зависимости приложения MSW Датчик - Мониторинг
+
+# Qt6 для GUI
+PyQt6>=6.4.0
+
+# Modbus RTU
+minimalmodbus>=2.0.1
+
+# Работа с COM-портами
+pyserial>=3.5
+
+# Графики
+matplotlib>=3.5.0
