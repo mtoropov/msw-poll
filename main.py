@@ -17,26 +17,26 @@ def main():
     # Настройка логирования
     setup_logging(level=logging.INFO)
     logger = logging.getLogger(__name__)
-    
-    logger.info("Запуск приложения MSW Датчик - Мониторинг")
-    
+
+    logger.info("Запуск приложения Мониторинг датчика WB-MSW v.4")
+
     # Создание приложения Qt
     app = QApplication(sys.argv)
-    app.setApplicationName("MSW Датчик - Мониторинг")
-    app.setOrganizationName("MSW")
-    
+    app.setApplicationName("Мониторинг датчика WB-MSW v.4")
+    app.setOrganizationName("TMV Group")
+
     # Включение High DPI
     if hasattr(Qt, 'AA_EnableHighDpiScaling'):
         QApplication.setAttribute(Qt.ApplicationAttribute.AA_EnableHighDpiScaling, True)
     if hasattr(Qt, 'AA_UseHighDpiPixmaps'):
         QApplication.setAttribute(Qt.ApplicationAttribute.AA_UseHighDpiPixmaps, True)
-    
+
     # Создание и показ главного окна
     window = MainWindow()
     window.show()
-    
+
     logger.info("Главное окно отображено")
-    
+
     # Запуск цикла событий
     sys.exit(app.exec())
 

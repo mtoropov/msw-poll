@@ -14,7 +14,7 @@ DEFAULT_POLL_INTERVAL = 0.1  # секунды
 BAUDRATES = [9600, 19200, 38400, 57600, 115200]
 
 # Настройки окна
-WINDOW_TITLE = "MSW Датчик - Мониторинг"
+WINDOW_TITLE = "Мониторинг датчика WB-MSW v.4"
 WINDOW_MIN_WIDTH = 800
 WINDOW_MIN_HEIGHT = 600
 

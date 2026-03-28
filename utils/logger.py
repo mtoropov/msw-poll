@@ -10,7 +10,7 @@ from config import LOG_FORMAT, LOG_DATE_FORMAT
 def setup_logging(level=logging.INFO):
     """
     Настройка системы логирования.
-    
+
     Args:
         level: Уровень логирования (по умолчанию INFO)
     """
@@ -23,10 +23,10 @@ def setup_logging(level=logging.INFO):
             logging.StreamHandler(sys.stdout)
         ]
     )
-    
+
     # Отключение избыточного логирования библиотек
     logging.getLogger('PyQt6').setLevel(logging.WARNING)
     logging.getLogger('minimalmodbus').setLevel(logging.WARNING)
-    
+
     logger = logging.getLogger(__name__)
     logger.info("Логирование настроено")

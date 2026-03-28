@@ -1,4 +1,4 @@
-# MSW Датчик - Мониторинг
+# Мониторинг датчика WB-MSW v.4
 
 Графическое приложение для опроса датчика по Modbus RTU и отображения его параметров в реальном времени.
 
@@ -34,19 +34,19 @@
 
 ```
 MSW-poll/
-├── main.py                     # Точка входа
-├── config.py                   # Конфигурация
-├── requirements.txt            # Зависимости
-├── ui/                         # GUI модули
+├── main.py                      # Точка входа
+├── config.py                    # Конфигурация
+├── requirements.txt             # Зависимости
+├── ui/                          # GUI модули
 │   ├── __init__.py
-│   └── main_window.py         # Главное окно
-├── modbus/                     # Modbus модули
+│   └── main_window.py           # Главное окно
+├── modbus/                      # Modbus модули
 │   ├── __init__.py
-│   ├── modbus_client.py       # Клиент Modbus RTU
-│   └── modbus_worker.py       # Рабочий поток (QThread)
-└── utils/                      # Утилиты
+│   ├── modbus_client.py         # Клиент Modbus RTU
+│   └── modbus_worker.py         # Рабочий поток (QThread)
+└── utils/                       # Утилиты
     ├── __init__.py
-    └── logger.py              # Логирование
+    └── logger.py                # Логирование
 ```
 
 ### Особенности архитектуры
